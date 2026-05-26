@@ -1,0 +1,53 @@
+# 🛡️ Active Directory 
+
+This branch documents a straightforward configuration of **Windows Server 2022 Active Directory** within the lab environment.  
+The goal is to isolate the network for controlled attack simulations and log generation for the SIEM.
+
+---
+
+## 📌 Configuration Steps
+
+### 1. Virtual Machine Setup
+- Open **VirtualBox → Settings → Network**  
+- Set the adapter to **Internal Network**  
+- Name the network: `intnet`  
+- This ensures the VM is isolated for later attack simulations and log collection.
+
+### 2. Static IP Configuration
+- Navigate to: **Server Manager → Local Server → Properties → Ethernet → TCP/IP Protocol**  
+- Change from *Obtain an IP automatically* to:  
+  - **IP Address:** `192.169.10.10`  
+  - **Subnet Mask:** `255.255.255.0`  
+  - **Default Gateway:** *(leave blank, since everything runs on the internal network)*  
+
+### 3. Name / Domain
+- Navigate to: **Server Manager → System Properties → Computer Name/Domain Changes**  
+- Set **Computer Name:** `ActiveCompanyDC` (Active Company Domain Controller)  
+
+### 4. Adding Roles and Features
+- Navigate to: **Server Manager → Manage → Add Roles and Features**  
+- Select **Installation Type:** Role‑based or feature‑based installation  
+- Select the destination server: `ActiveCompanyDC`  
+- Choose roles:  
+  - **Active Directory Domain Services**  
+  - **DNS Server**  
+- Continue with default options for the rest of the configuration.  
+
+### 5. Deployment Configuration
+- Select: **Add New Forest**  
+- Root Domain Name: `activecompany.local`  
+- Keep domain options as default and finish the installation.  
+
+---
+
+## 👥 Creating Users and Groups
+- Define organizational units (HR, Ecom, Design, Financial).  
+- Create user accounts with appropriate roles and passwords. 
+
+
+---
+
+## 🎯 Purpose
+- Provide a controlled environment for **Active Directory** operations.  
+- Enable **attack simulations** from Kali Linux to generate logs.  
+- Support **SIEM integration** with ELK Stack for monitoring and analysis 
