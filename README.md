@@ -55,7 +55,7 @@ Using **Kali Linux** with basic tools to generate logs and simulate attacks.
 
 ## 🙌 Credits
 - [IT EDGE NETWORK - YouTube](https://www.youtube.com/watch?v=nOgvNllLhaw)  
-
+- [IT SECURITY LABS - Youtube](https://www.youtube.com/watch?v=IwlV3wVX4xs&list=PLyJqGMYm0vnMHLPbmT1-fknzTzR7auBEb)
 ---
 
 ## 🧑‍💻 Author
