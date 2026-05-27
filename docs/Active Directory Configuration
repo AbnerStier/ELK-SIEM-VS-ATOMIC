@@ -45,7 +45,7 @@ The goal is to isolate the network for controlled attack simulations and log gen
 - Create user accounts with appropriate roles and passwords. 
 - Create folders including sensitive data, future projects, passwords and financial records.
 https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/user_groups.png?raw=true
-
+https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/network_acess_example.png
 ---
 
 ## 🎯 Purpose
