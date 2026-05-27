@@ -1,0 +1,3 @@
+##SLK STACK CONFIGURATION:
+-Go to `https://www.elastic.co/downloads/elasticsearch ` Free Trial -> Login with your credentials -> Security Option - Self Hosted and Severless option -> SIEM and Security Analisys-> Cloud Provider: `Amazon Web Services` #Because of the 14 days free trial
+-
