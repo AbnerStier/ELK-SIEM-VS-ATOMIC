@@ -1,3 +1,13 @@
 ##SLK STACK CONFIGURATION:
+
+###1. Login on ELK Stack
 -Go to `https://www.elastic.co/downloads/elasticsearch ` Free Trial -> Login with your credentials -> Security Option - Self Hosted and Severless option -> SIEM and Security Analisys-> Cloud Provider: `Amazon Web Services` #Because of the 14 days free trial
--
+
+###2.0 Insatlling Agent on Windows Server:
+- Inside the ELK go to `Integrations` -> Set up Active Directory Entity Analytics:
+
+-Copy the clipBoard and past on Active Directory Server -> in the [y/n] select: [y] -> the message that will appear on the terminal will be: "Elastic Agent has been succesfully installed."
+- Now need to check on the Siem and will get the message:
+
+
+
