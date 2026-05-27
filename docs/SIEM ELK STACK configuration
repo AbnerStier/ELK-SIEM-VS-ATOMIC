@@ -23,7 +23,8 @@ https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/ELK-agent-setu
 -Setup Sync Interval as: 1h
 -Setup Update Interval as: 15m
 - And Mark the "Include empty groups"
-
+https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/fleet-siem.png?raw=true
+-Press "Confirm Data"
 
 
 
