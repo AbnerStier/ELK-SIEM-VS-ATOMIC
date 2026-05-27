@@ -36,7 +36,7 @@ Version: *Standard Evaluation (Desktop Experience) x64*
 ### Sensitive Folders
 - **Marketing** → Future projects → `CompanyStar2.0`  
 - **Financial** → Company financial records → `Records_Dezember_2025`  
-- **Design** → Front‑End code → `New_Site_2026`  
+- **Design** → Front‑End code → `New_Site_2026.html`  
 - **Sales** → Clients database → `clients_2010-2025`  
 - **HR** → Customer credit numbers & security IDs → `customers_id`  
 
