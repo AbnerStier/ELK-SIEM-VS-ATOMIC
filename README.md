@@ -24,9 +24,9 @@ Version: *Standard Evaluation (Desktop Experience) x64*
 ### Flags / User Credentials
 - ActiveCompany Admin → `Chosen1#77`  
 - Bob (HR) → `Daughter234`  
-- Emily (Sales) → `3com372`  
+- Emily (Sales) → `S4les#2026`  
 - Melissa (Design) → `4rt4ever@73`  
-- Mathew (Financial) → `M0ney$`  
+- Mathew (Financial) → `M0ney$2026`  
 - Stacy (Marketing) → `Pickles@2001` 
 ---
 
