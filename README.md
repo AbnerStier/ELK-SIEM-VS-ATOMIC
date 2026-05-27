@@ -21,13 +21,26 @@ The goal is to provide a safe and controlled environment where both offensive an
 ## 🖥️ Windows Server 2022
 Version: *Standard Evaluation (Desktop Experience) x64*  
 
-### Flags / User Credentials
-- ActiveCompany Admin → `Chosen1#77`  
-- Bob (HR) → `Daughter234`  
-- Emily (Sales) → `S4les#2026`  
-- Melissa (Design) → `4rt4ever@73`  
-- Mathew (Financial) → `M0ney$2026`  
-- Stacy (Marketing) → `Pickles@2001` 
+## 🔑 Flags / User Credentials / Sensitive Data
+
+### User Accounts
+- **ActiveCompany Admin** → `Chosen1#77`  
+- **Bob (HR)** → `Daughter234`  
+- **Emily (Sales)** → `S4les#2026`  
+- **Melissa (Design)** → `4rt4ever@73`  
+- **Mathew (Financial)** → `M0ney$2026`  
+- **Stacy (Marketing)** → `Pickles@2001`  
+
+---
+
+### Sensitive Folders
+- **Marketing** → Future projects → `CompanyStar2.0`  
+- **Financial** → Company financial records → `Records_Dezember_2025`  
+- **Design** → Front‑End code → `New_Site_2026`  
+- **Sales** → Clients database → `clients_2010-2025`  
+- **HR** → Customer credit numbers & security IDs → `customers_id`  
+
+---
 ---
 
 ## 📊 ELK Stack
