@@ -27,7 +27,7 @@ Version: *Standard Evaluation (Desktop Experience) x64*
 - Emily (Sales) → `3com372`  
 - Melissa (Design) → `4rt4ever@73`  
 - Mathew (Financial) → `M0ney$`  
-
+- Stacy (Marketing) → `Pickles@2001` 
 ---
 
 ## 📊 ELK Stack
