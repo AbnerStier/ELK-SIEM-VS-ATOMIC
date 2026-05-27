@@ -43,7 +43,7 @@ The goal is to isolate the network for controlled attack simulations and log gen
 ## 👥 Creating Users and Groups
 - Define organizational units (HR, Ecom, Design, Financial).  
 - Create user accounts with appropriate roles and passwords. 
-
+- Create folders including sensitive data, future projects, passwords and financial records.
 https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/user_groups.png?raw=true
 
 ---
