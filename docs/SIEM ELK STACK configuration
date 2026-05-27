@@ -7,7 +7,23 @@
 - Inside the ELK go to `Integrations` -> Set up Active Directory Entity Analytics:
 
 -Copy the clipBoard and past on Active Directory Server -> in the [y/n] select: [y] -> the message that will appear on the terminal will be: "Elastic Agent has been succesfully installed."
+https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/windows-server-install.png?raw=true
+
 - Now need to check on the Siem and will get the message:
+https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/ELK-agent-setup.png
+
+- Select: "Add the Integration"
+
+###Collect Identities:
+- Setup Active Directory Base DN as: activecompany.local
+-Active Directory URL as: LDAP://ActiveCompanyDC.activecompany.local/Default naming context
+- Active Directory User as:administrator
+-Active Directory User Password: Chosen1#77
+-Setup Active Directory Dataset as: all
+-Setup Sync Interval as: 1h
+-Setup Update Interval as: 15m
+- And Mark the "Include empty groups"
+
 
 
 
