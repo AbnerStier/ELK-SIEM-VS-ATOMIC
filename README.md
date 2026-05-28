@@ -13,7 +13,7 @@ The goal is to provide a safe and controlled environment where both offensive an
 ## 🛠️ Tools Used
 - **VirtualBox**  
   - Windows Server 2022 Active Directory → *ActiveCompany*  
-  - Kali Linux → *Anakin*  
+  - Kali Linux → 
   
 ---
 
