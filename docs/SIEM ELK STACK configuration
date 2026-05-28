@@ -31,8 +31,11 @@ https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/fleet-siem.png
 - Add those three Integration Policies: Elastic Defende - System - Windows
 - Navigate throut the Elastic Defend integarion and go to 'Integration Policies'  -> Click on Elastic Defend -> Edit Integration and Set every Policy Settings on 'Detect' only.
 
-###Adding Elastic Rules:
-- Filters by "Data Source: Active Directory" -> Install all
--
+https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/policy.png
+
+###5.0 Adding Elastic Rules:
+- Filters by "Data Source: Active Directory", "Windows" -> Install all
+- Select 'Tags' -> Filters all Sources that are installed ->  Select All 1850 Rules -> Bulk Actions -> Enable
+
 
 
