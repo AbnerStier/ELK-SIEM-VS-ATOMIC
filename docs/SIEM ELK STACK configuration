@@ -14,7 +14,7 @@ https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/ELK-agent-setu
 
 - Select: "Add the Integration"
 
-###Collect Identities:
+###3.0 Collect Identities:
 - Setup Active Directory Base DN as: activecompany.local
 -Active Directory URL as: LDAP://ActiveCompanyDC.activecompany.local/Default naming context
 - Active Directory User as:administrator
@@ -26,5 +26,13 @@ https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/ELK-agent-setu
 https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/fleet-siem.png?raw=true
 -Press "Confirm Data"
 
+
+###4.0 Navigate inside the ELK SIEM and go to Assets -> Agents -> Agent Policies -> Create Agent Policie -> Select on 'activecompany' 
+- Add those three Integration Policies: Elastic Defende - System - Windows
+- Navigate throut the Elastic Defend integarion and go to 'Integration Policies'  -> Click on Elastic Defend -> Edit Integration and Set every Policy Settings on 'Detect' only.
+
+###Adding Elastic Rules:
+- Filters by "Data Source: Active Directory" -> Install all
+-
 
 
