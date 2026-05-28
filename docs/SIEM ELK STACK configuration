@@ -1,41 +1,64 @@
-##SLK STACK CONFIGURATION:
+## SLK STACK CONFIGURATION
 
-###1. Login on ELK Stack
--Go to `https://www.elastic.co/downloads/elasticsearch ` Free Trial -> Login with your credentials -> Security Option - Self Hosted and Severless option -> SIEM and Security Analisys-> Cloud Provider: `Amazon Web Services` #Because of the 14 days free trial
+### 1. Login on ELK Stack
+- Go to `https://www.elastic.co/downloads/elasticsearch`
+- Select **Free Trial** → Login with your credentials
+- Choose **Security Option** → Self-Hosted or Serverless
+- Select **SIEM and Security Analysis**
+- Cloud Provider: `Amazon Web Services` *(because of the 14-day free trial)*
 
-###2.0 Insatlling Agent on Windows Server:
-- Inside the ELK go to `Integrations` -> Set up Active Directory Entity Analytics:
+---
 
--Copy the clipBoard and past on Active Directory Server -> in the [y/n] select: [y] -> the message that will appear on the terminal will be: "Elastic Agent has been succesfully installed."
-https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/windows-server-install.png?raw=true
+### 2. Installing Agent on Windows Server
+- Inside ELK, go to **Integrations** → Set up **Active Directory Entity Analytics**
+- Copy the clipboard command and paste it on the Active Directory Server
+- When prompted `[y/n]`, select `[y]`
+- Terminal message: *"Elastic Agent has been successfully installed."*
 
-- Now need to check on the Siem and will get the message:
-https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/ELK-agent-setup.png
+![Windows Server Install](https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/windows-server-install.png?raw=true)
 
-- Select: "Add the Integration"
+- Check on the SIEM; you should see confirmation:
 
-###3.0 Collect Identities:
-- Setup Active Directory Base DN as: activecompany.local
--Active Directory URL as: LDAP://ActiveCompanyDC.activecompany.local/Default naming context
-- Active Directory User as:administrator
--Active Directory User Password: Chosen1#77
--Setup Active Directory Dataset as: all
--Setup Sync Interval as: 1h
--Setup Update Interval as: 15m
-- And Mark the "Include empty groups"
-https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/fleet-siem.png?raw=true
--Press "Confirm Data"
+![ELK Agent Setup](https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/ELK-agent-setup.png)
 
+- Select: **Add the Integration**
 
-###4.0 Navigate inside the ELK SIEM and go to Assets -> Agents -> Agent Policies -> Create Agent Policie -> Select on 'activecompany' 
-- Add those three Integration Policies: Elastic Defende - System - Windows
-- Navigate throut the Elastic Defend integarion and go to 'Integration Policies'  -> Click on Elastic Defend -> Edit Integration and Set every Policy Settings on 'Detect' only.
+---
 
-https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/policy.png
+### 3. Collect Identities
+- Active Directory Base DN: `activecompany.local`
+- Active Directory URL: `LDAP://ActiveCompanyDC.activecompany.local/Default naming context`
+- Active Directory User: `administrator`
+- Active Directory User Password: `Chosen1#77`
+- Dataset: `all`
+- Sync Interval: `1h`
+- Update Interval: `15m`
+- Mark: **Include empty groups**
 
-###5.0 Adding Elastic Rules:
-- Filters by "Data Source: Active Directory", "Windows" -> Install all
-- Select 'Tags' -> Filters all Sources that are installed ->  Select All 1850 Rules -> Bulk Actions -> Enable
+![Fleet SIEM](https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/fleet-siem.png?raw=true)
 
+- Press **Confirm Data**
 
+---
 
+### 4. Agent Policies
+- Navigate inside ELK SIEM → **Assets → Agents → Agent Policies → Create Agent Policy**
+- Select: `activecompany`
+- Add these three integration policies:
+  - Elastic Defend
+  - System
+  - Windows
+- Navigate through Elastic Defend integration → **Integration Policies**
+- Click on **Elastic Defend → Edit Integration**
+- Set every Policy Setting to **Detect only**
+
+![Policy Settings](https://github.com/AbnerStier/ELK-SIEM-VS-ATOMIC/blob/main/images/policy.png)
+
+---
+
+### 5. Adding Elastic Rules
+- Filter by: **Data Source: Active Directory**, **Windows**
+- Install all rules
+- Select **Tags** → Filter all installed sources
+- Select all **1850 Rules**
+- Go to **Bulk Actions → Enable**
